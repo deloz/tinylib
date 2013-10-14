@@ -1,0 +1,55 @@
+body, button, input, select, textarea {
+	color: #565656;
+	overflow-x: hidden;
+	font-family: "Segoe UI", "Microsoft Yahei", SimSun, Verdana, Arial, Sans-Serif;
+}
+a {
+	color: #565656;
+	text-decoration: none;
+}
+.panel, .fooer {
+	margin: 0 auto;
+	padding: 2em;
+	width: 800px;
+}
+.panel {
+	margin: 5em auto 0;
+	border: solid 1px #ddd;
+}
+.panel-header {
+	margin-bottom: 20px;
+	border-bottom: solid 1px #ddd;
+}
+.header-title {
+	font: 1.5em/1em normal;
+}
+.panel, .panel-main input, .panel-main textarea {
+	border-radius: 5px;
+}
+.panel-main input[type="text"], .panel-main input[type="submit"], .panel-main textarea {
+	border: 1px solid #999;
+	padding: 5px 10px;
+	font-size: 16px;
+	margin: 5px 0px;
+}
+.panel-main input[type="text"] {
+	width: 500px;
+	height: 30px;
+}
+.panel-main input[type="submit"] {
+	width: 100px;
+	height: 40px;
+}
+.panel-main textarea {
+	width: 700px;
+	height: 220px;
+}
+.panel-main label {
+	font-weight: normal;
+}
+.tips {
+	font-size: .7em;
+}
+.fooer {
+	font-size: .8em;
+}
