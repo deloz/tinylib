@@ -37,7 +37,7 @@ if (isset($_POST['postname']) && isset($_POST['postcontent']) && is_login()) {
 	$title = $_POST['postname'];
 	$content = $_POST['postcontent'];
 	markdown($title, $content);
-	echo "<script>alert('添加成功')></script>";
+	echo "<script>alert('添加成功');</script>";
 }
 
 /**
