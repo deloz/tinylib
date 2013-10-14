@@ -2,13 +2,8 @@
 session_start();
 
 $password = "123456";
+
 $GLOBALS['tips'] = NULL;
-
-
-$_GET = transcribe($_GET);
-$_POST = transcribe($_POST);
-$_REQUEST = transcribe($_REQUEST);
-
 
 //初始化验证数据
 if (!isset($_SESSION['login_hash'])) {
@@ -36,16 +31,23 @@ if (isset($_POST['password'])) {
 		msg('密码错误');
 	}
 }
+
+//添加文章
 if (isset($_POST['postname']) && isset($_POST['postcontent']) && is_login()) {
 	$title = $_POST['postname'];
 	$content = $_POST['postcontent'];
 	markdown($title, $content);
+	echo "<script>alert('添加成功')></script>";
 }
 
 /**
  * transcribe()
  * 来自LazyPHP
  */
+$_GET = transcribe($_GET);
+$_POST = transcribe($_POST);
+$_REQUEST = transcribe($_REQUEST);
+
 function transcribe($aList, $aIsTopLevel = true) {
 	$gpcList = array();
 	$isMagic = get_magic_quotes_gpc();
@@ -117,7 +119,7 @@ function markdown($title, $content) {
 	$template_tag = array('{title}', '{marktime}', '{content}');
 	$contents = array($title, date('Y-m-d H:m:s'), $content);
 	$html_data = str_replace($template_tag, $contents, $data);
-	file_put_contents('./mark/'.time().'.html', $html_data);
+	file_put_contents('./mark/' . time() . '.html', $html_data);
 }
 ?>
 <html>
