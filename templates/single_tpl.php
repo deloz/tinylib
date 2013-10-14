@@ -9,7 +9,7 @@
 <META name=Keywords content=图书馆,东软信息学院,大连，东软>
 <META name=description content=大连东软信息学院图书馆>
 <META content=No-Cache http-equiv=Pragma>
-<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<META content="text/html; charset=UTF-8" http-equiv=Content-Type>
 <LINK rel=StyleSheet type=Text/Css href="../images/Style.css">
 <link type="text/css" rel="Stylesheet" href="../images/css.css" />
 <style type="text/css">

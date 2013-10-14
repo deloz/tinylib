@@ -47,6 +47,10 @@ a {
 .panel-main label {
 	font-weight: normal;
 }
+.loginout {
+	float: right;
+	text-decoration: underline;
+}
 .tips {
 	font-size: .7em;
 }
